@@ -52,7 +52,7 @@ export default function App() {
         popUpModal(`Your wave is #${count.toNumber()}`);
         // await getAllWaves();
       } else {
-        popUpModal("Ethereum object doesn't exist!");
+        popUpModal("Please connect a wallet to wave 🙃");
       }
     } catch {
       setIsMining(false);
