@@ -136,12 +136,16 @@ export default function App() {
   const connectWallet = async () => {
     try {
       const accounts = await window.ethereum.request({
-        method: "eth_accounts",
+        method: "eth_requestAccounts",
       });
-      const account = accounts[0];
-      setCurrentAccount(account);
-      popUpModal(`Connected with account: ${account}`);
-      setCanConnect(false);
+      if (accounts.length) {
+        const account = accounts[0];
+        setCurrentAccount(account);
+        popUpModal(`Connected with account: ${account}`);
+        setCanConnect(false);
+      } else {
+        popUpModal("Can't connect to wallet");
+      }
     } catch (error) {
       setCanConnect(true);
       popUpModal("Failed to connect wallet");
