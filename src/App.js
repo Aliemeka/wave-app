@@ -103,7 +103,8 @@ export default function App() {
         });
 
         if (accounts.length !== 0) {
-          setCanConnect(true);
+          setCanConnect(false);
+          setCurrentAccount(accounts[0]);
           setShow(false);
         } else {
           console.log("No authorized account found");
