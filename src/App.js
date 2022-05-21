@@ -108,7 +108,7 @@ export default function App() {
           setShow(false);
         } else {
           console.log("No authorized account found");
-          setMessage("No authorized account found");
+          setMessage("You need to connect your wallet");
           setCanConnect(true);
           setLink("#/");
           setShow(true);
