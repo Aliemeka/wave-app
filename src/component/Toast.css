@@ -1,0 +1,28 @@
+.toast {
+  position: fixed;
+  top: 2rem;
+  right: 1rem;
+  display: flex;
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: rgb(66, 34, 243);
+  color: #dadada;
+  box-shadow: #1a1a1a 0px 0px 2px;
+  animation: popIn 600ms ease-in;
+  text-decoration: none;
+}
+
+.toast:hover {
+  text-decoration: underline;
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    right: -6rem;
+  }
+  100% {
+    opacity: 1;
+    right: 1rem;
+  }
+}

@@ -14,7 +14,7 @@ body {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: grid;
   place-items: center;
-  height: 100vh;
+  min-height: 100vh;
   font-family: "Space Grotesk", sans-serif;
 }
 
@@ -62,4 +62,9 @@ body {
   transition: all 300ms;
   padding: 10px;
   box-shadow: #363535 0px 4px 8px;
+}
+
+.connect {
+  background-color: rgb(194, 57, 7);
+  color: beige;
 }
