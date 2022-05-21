@@ -108,7 +108,7 @@ export default function App() {
         } else {
           console.log("No authorized account found");
           setMessage("No authorized account found");
-          setCanConnect(false);
+          setCanConnect(true);
           setLink("#/");
           setShow(true);
         }
